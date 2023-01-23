@@ -20,8 +20,6 @@ export const load = async () => {
 	const { projects } = await client.request(query);
 
 	return {
-		props: {
-			projects
-		}
+		projects
 	};
 };
