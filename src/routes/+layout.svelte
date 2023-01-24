@@ -6,7 +6,7 @@
 
 <header />
 
-<main>
+<main class="container max-w-3xl mx-auto px-4 mb-20">
 	<slot />
 	<!-- sveltkit is a decorate filed format, recall + -->
 	<!-- +layout is another type-->
