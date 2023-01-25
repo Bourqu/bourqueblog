@@ -5,7 +5,7 @@
   
   
   <svelte:head>
-    <title>My Portfolio Project</title>
+    <title>Bourque Portfolio</title>
   </svelte:head>
 
   <h1 class="font-bold text-center mb-20 text-5xl">My Portfolio</h1>
@@ -16,7 +16,7 @@
       <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
       <p class="text-xl mb-4">{intro}</p>
     </div>
-    
+
     <img class="mask mask-squircle h-48" src={url} alt={name} />
   </div>
 {/each}
