@@ -1,19 +1,18 @@
 <script>
 	import '../app.postcss';
 	import Header from '$lib/components//Header.svelte';
-	import Navbar from '../lib/components/navbar.svelte';
+    import Navbar from '../lib/components/navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import '../app.postcss';
+    import '../app.postcss'
 	import { onMount } from 'svelte';
-	import { themeChange } from 'theme-change';
-	export const prerender = true;
+    import {themeChange} from 'theme-change'
+    export const prerender = true;
 
-	onMount(async () => {
-		themeChange(false);
-	});
+
+    onMount(async () => {themeChange(false)})
 </script>
 
-<Navbar />
+<Navbar/>
 
 <main class="container max-w-3xl mx-auto px-4 mb-20">
 	<slot />
