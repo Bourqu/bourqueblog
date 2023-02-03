@@ -1,11 +1,9 @@
-import { adapter } from 'sveltekit-adapter-aws';
-import preprocess from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-static';
 
 export default {
-  preprocess: preprocess(),
-  kit: {
-    adapter: adapter({
-      autoDeploy: true,
-    }),
-  },
+	kit: {
+		adapter: adapter({
+			fallback: '+page.svelte'
+		})
+	}
 };
